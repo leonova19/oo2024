@@ -37,7 +37,7 @@ class Maatükk {
 
     lisaPunkt(x: number, y: number): void {
         this.punktid.set(`${x},${y}`, new Punkt(x, y));
-        this.piiriPikkus++; 
+        this.piiriPikkus = this.piiriPikkus + 1;
     }
 
     leiaPiiriPikkus(): number {  //tagastame maatüki piiri pikkuse 
